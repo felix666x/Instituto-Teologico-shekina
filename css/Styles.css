@@ -1,0 +1,525 @@
+:root {
+    --color-marino: #164676;
+  }
+body{
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+}
+
+
+header{
+    background: pink;
+
+}
+h1{
+    /* para separar el texto line-height: ; */
+     font-size: 40px;
+     line-height: 1.5;
+     /* Separacionde las letras */
+     letter-spacing: -.2px ;
+     /* Mayusculas y minusculas
+     text-transform: uppercase;
+      decorar el texto 
+     text-decoration: ;*/
+     margin: 0px;
+}
+.hero{
+    height: 300px;
+    /* background-image: url('../img/Uni.jpg') ; */
+    /* El tama;o de la imegen */
+    /* background-size: 500px 300px; */
+    /* para que no se repite */
+    /* background-repeat: no-repeat; */
+    /* para que la imagen este de lado */
+    /* background-position-x:right ; */
+    /* para que tenga color */
+    background-color: var(--color-marino);
+    color: white;
+    display: flex;
+    align-items: center;
+    /* para que se valla a la derecha */
+    justify-content: space-between;
+
+}
+.hero-image{
+   object-fit: cover;
+}
+
+
+  
+.project{
+    /* tama;o del borde 
+    border-width: 20px;
+    /* para que se mire el borde
+    border-style: solid ;
+    /* Color del borde 
+    border-color: teal;*/
+    border: 1px solid  gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    /* margin: 10px; */
+    padding: 20px;
+    background: white;
+    /* para que la caja no se mueve a pesar del padin que le den o margin */
+    /* box-sizing: border-box; */
+    /* Diplay flex para poner una imagen a un lado del otro */
+    display: flex;
+   /*  */
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+/*
+Para que caiga de forma para abajo las cajas
+ flex -wrap: wrap
+
+Encongible o no enncogible 0 1
+
+Hijo selecto: flex-shrink:0;
+
+*/
+/*  justify-content: * 
+     Lo que queramos poner para justificar el contenido
+*/
+/* 
+ align-items: flex-end para poner al ultimo star para ponerlo al principio
+*/
+
+/* 
+para mover la cajas donde queramos
+flex-direction: colum
+aling-item:center
+justy-conter:center
+alingn-self: flex-star, flex star
+
+*/
+.project-course,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+.project-description{
+    font-size: 20px;
+
+
+}
+.project strong{
+    font-family: 'Shadows Into Light', sans-serif;
+
+}
+
+/* .project-date{
+    margin:  10px 0;
+
+} */
+
+.project-title{
+    font-size: 30px;
+    margin-top: 0 ;
+    margin-bottom: 10px;
+
+}
+.project-detail{
+    width: 500px;
+}
+
+.project-imageContainer{
+    width: 500px;
+
+}
+
+.header{
+    background-color: var(--color-marino) ;
+    color: white;
+    /* para que se flexible  */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    border: #1300aa 5px solid;
+    /* border-bottom-style: outset; */
+    border-style:outset ;
+    
+
+}
+
+    ol,
+    ul{
+        margin: 0;
+        padding: 0;
+        /* Quitar los numeros */
+       list-style: none;
+
+    }
+    
+    figure{
+        margin: 0;
+        
+    }
+    .header a{
+
+        display: flex;
+        align-items: center;
+        height: inherit;
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+    }
+     .menu {
+       height: inherit;
+      
+                
+    }
+    .header ol{
+        display: flex;
+        height: inherit;
+        
+        }
+
+    .header ol li{
+        height: inherit;
+       
+    }
+
+
+
+h1 strong{
+    color: #026fff ;
+
+
+}
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.porta{
+    background: #fafafa;
+    padding: 20px;
+    
+    
+}
+footer{
+    color: white;
+    background-color: var(--color-marino);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.footer a{
+     color: white;
+}
+
+/*  para cntrar la foto
+.footer img {
+   
+    vertical-align: middle;
+} */
+
+.Expe{
+   
+    margin: 10px;
+    width: 480px;
+    /* Para ocupar el tama;o que le asignaron */
+    flex-shrink: 0;
+    border-radius: 10px ;
+
+    /* para  ocultar el borde de una imagenel pico de la esquina */
+    overflow: hidden;
+    background: #f4fbff;
+ 
+}
+
+.Expe-list {
+    
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.Expe-detail {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 20px  40px;
+    margin-top: -0px;
+    background-color: white;
+    /* posicio supeponer encima de otro */
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.Expe-description{
+    text-align: left;
+}
+
+
+.Expe-h{
+    margin-left: 20px;
+
+
+}
+
+.contact{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    /* solo para llevarme los iconos sociales */
+    justify-content: space-between;
+}
+/* .Social{
+    
+} */
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;  
+    margin: 0 10px ;
+    background-size: 50px 50px;
+
+    }
+
+.social-link.twitter{
+
+    background-image: url('../img/twitter.svg');
+}
+.social-link.facebook{
+
+    background-image: url('../img/facebook.svg');
+   
+}
+.social-link.watsap{
+
+    background-image: url('../img/whatsapp.svg');
+    
+}
+.social-link.Instagram{
+
+    background-image: url('../img/instagram.svg');
+    
+}
+.form-email input{
+border-color: gray;
+border-style: solid;
+border-radius: 5px;
+padding: 10px 20px 10px 25px;
+background-image: url('../img/email.svg');
+background-size: 15px 15px;
+background-repeat: no-repeat;
+background-position-y: center ;
+background-position-x: 5px;
+}
+
+
+
+.container{
+     /* border: 1px solid red; */
+     width: 1010px;
+     margin: 0 auto;
+     display: inherit;
+     justify-content: inherit;
+     align-items: inherit;
+     height: inherit;
+     flex-wrap: inherit;
+
+}
+
+
+.map-indi{
+    border: solid black 1px;
+    justify-content: space-between;
+    display: flex;
+    margin: 10px;
+    height: 500px;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+/* Galeria */
+
+.slider {
+	
+	margin: auto;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+/* materia y especialidades */
+
+.hmv-box {
+    padding: 60px 0px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media (min-width: 992px)
+.col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+@media (min-width: 768px)
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.inner-hmv {
+    padding: 15px;
+    box-shadow: 0 0px 10px rgba(0,0,0,.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-box-hmv {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border: 3px solid #4babb1;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.inner-hmv h3 {
+    font-size: 28px;
+    color: #212121;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+h3 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0;
+    font-weight: normal;
+    position: relative;
+    padding: 0 0 10px 0;
+    font-weight: normal;
+    line-height: 120% !important;
+    color: #1f1f1f;
+    margin: 0;
+}
+.h3, h3 {
+    font-size: 1.75rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.tr-pa {
+    font-size: 170px;
+    color: #fbfbfb;
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    line-height: 125px;
+    font-weight: 700;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* End */
